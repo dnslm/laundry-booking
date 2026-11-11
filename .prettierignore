@@ -1,0 +1,10 @@
+node_modules
+dist
+build
+coverage
+.yarn
+.pnp.*
+yarn.lock
+*.db
+backend/src/generated
+backend/prisma/migrations

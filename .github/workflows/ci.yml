@@ -1,0 +1,51 @@
+name: CI
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+
+jobs:
+  check:
+    name: check
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    env:
+      HUSKY: 0
+    steps:
+      - uses: actions/checkout@v6
+
+      # Corepack must be enabled before setup-node so that Yarn 4 is used for caching
+      - name: Enable Corepack
+        run: corepack enable
+
+      - uses: actions/setup-node@v6
+        with:
+          node-version-file: .nvmrc
+          cache: yarn
+
+      - name: Install dependencies
+        run: yarn install --immutable
+
+      - name: Lint
+        run: yarn lint
+
+      - name: Check formatting
+        run: yarn format:check
+
+      # The three steps below run only in workspaces that define the script
+      - name: Typecheck
+        run: yarn types
+
+      - name: Tests
+        run: yarn tests
+
+      - name: Build
+        run: yarn build:all

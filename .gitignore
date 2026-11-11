@@ -1,0 +1,43 @@
+# Dependencies
+node_modules/
+
+# Yarn (Berry)
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions
+*.tsbuildinfo
+
+# Build output
+dist/
+build/
+coverage/
+
+# Environment (real secrets never go to git)
+.env
+.env.*
+!.env.example
+
+# SQLite databases
+*.db
+*.db-journal
+*.sqlite
+*.sqlite3
+
+# Prisma client generated into the project (if output is configured)
+backend/src/generated/
+
+# Logs
+*.log
+yarn-error.log
+
+# Editors / OS
+.vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json
+.idea/
+.DS_Store
+Thumbs.db
