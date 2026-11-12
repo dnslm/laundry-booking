@@ -46,3 +46,4 @@ cp frontend/.env.example frontend/.env
 ## Как работаем
 
 Правила командной работы: [CONTRIBUTING.md](CONTRIBUTING.md). Контракт API: [docs/api.md](docs/api.md).
+Проверка процесса
