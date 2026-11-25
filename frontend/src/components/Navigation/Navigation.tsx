@@ -1,4 +1,4 @@
-import './Navigation.css'
+import './Navigation.css';
 
 function Navigation() {
   return (
@@ -7,7 +7,7 @@ function Navigation() {
       <a href="/booking">Бронирование</a>
       <a href="/schedule">Расписание</a>
     </nav>
-  )
+  );
 }
 
-export default Navigation
+export default Navigation;

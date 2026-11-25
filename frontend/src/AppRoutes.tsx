@@ -1,8 +1,8 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
-import Home from './pages/Home/Home'
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Home from './pages/Home/Home';
 
-import Header from './components/Header/Header'
-import NotFound from './pages/NotFound/NotFound'
+import Header from './components/Header/Header';
+import NotFound from './pages/NotFound/NotFound';
 
 function AppRoutes() {
   return (
@@ -15,7 +15,7 @@ function AppRoutes() {
         <Route path="*" element={<NotFound />} />
       </Routes>
     </BrowserRouter>
-  )
+  );
 }
 
-export default AppRoutes
+export default AppRoutes;

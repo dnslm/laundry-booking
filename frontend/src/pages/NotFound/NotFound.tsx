@@ -1,4 +1,4 @@
-import './NotFound.css'
+import './NotFound.css';
 
 function NotFound() {
   return (
@@ -7,14 +7,11 @@ function NotFound() {
 
       <h2>Страница не найдена</h2>
 
-      <p>
-        К сожалению, такой страницы не существует
-        или она была перемещена.
-      </p>
+      <p>К сожалению, такой страницы не существует или она была перемещена.</p>
 
       <a href="/">Вернуться на главную</a>
     </main>
-  )
+  );
 }
 
-export default NotFound
+export default NotFound;

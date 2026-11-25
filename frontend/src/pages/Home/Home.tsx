@@ -4,7 +4,7 @@ function Home() {
       <h1>Добро пожаловать в Laundry Booking!</h1>
       <p>Система бронирования стиральных машин в общежитии.</p>
     </main>
-  )
+  );
 }
 
-export default Home
+export default Home;
