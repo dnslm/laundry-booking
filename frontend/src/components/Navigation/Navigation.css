@@ -1,0 +1,23 @@
+.navigation {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.navigation a {
+  color: #596579;
+  font-size: 15px;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.navigation a:hover {
+  color: #218568;
+}
+
+@media (max-width: 768px) {
+  .navigation {
+    gap: 18px;
+    flex-wrap: wrap;
+  }
+}
