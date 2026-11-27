@@ -1,0 +1,175 @@
+.page {
+  display: grid;
+  grid-template-columns: minmax(0, 1.15fr) minmax(420px, 0.85fr);
+  min-height: 100vh;
+  min-height: 100dvh;
+  background: var(--color-panel);
+}
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-7);
+  padding: 40px 48px 40px 56px;
+  color: var(--color-on-dark);
+  background: var(--color-primary);
+  border-left: 6px solid var(--color-warm);
+}
+
+.logo {
+  display: block;
+  align-self: flex-start;
+  width: auto;
+  height: 34px;
+}
+
+.introBody {
+  max-width: 620px;
+  margin-top: auto;
+}
+
+.brandTitle {
+  max-width: 12ch;
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 1.06;
+  letter-spacing: -0.015em;
+}
+
+.introText {
+  max-width: 44ch;
+  margin-top: var(--space-4);
+  color: var(--color-on-dark-muted);
+  font-size: 16px;
+  line-height: 1.55;
+}
+
+.facts {
+  display: grid;
+  gap: var(--space-3);
+  max-width: 460px;
+  margin-top: var(--space-6);
+  padding-top: var(--space-5);
+  border-top: 1px solid rgba(255, 255, 255, 0.16);
+}
+
+.facts div {
+  display: grid;
+  grid-template-columns: 96px 1fr;
+  gap: var(--space-3);
+  align-items: baseline;
+}
+
+.facts dt {
+  color: var(--color-warm);
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.facts dd {
+  color: var(--color-on-dark-muted);
+  font-size: 14px;
+}
+
+.introFooter {
+  margin-top: auto;
+  padding-top: var(--space-5);
+  color: var(--color-on-dark-muted);
+  font-size: 13px;
+  border-top: 1px solid rgba(255, 255, 255, 0.16);
+}
+
+.formSide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-7) var(--space-6);
+  background: var(--color-panel);
+}
+
+.formInner {
+  width: 100%;
+  max-width: 440px;
+}
+
+.title {
+  color: var(--color-primary);
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 1.1;
+  letter-spacing: -0.01em;
+}
+
+.lead {
+  margin-top: var(--space-2);
+  color: var(--color-muted);
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.footer {
+  margin-top: var(--space-6);
+  padding-top: var(--space-4);
+  font-size: 14px;
+  border-top: 1px solid var(--color-border);
+}
+
+@media (max-width: 960px) {
+  .page {
+    grid-template-columns: 1fr;
+  }
+
+  .intro {
+    gap: var(--space-5);
+    padding: 28px 20px 32px;
+    border-top: 6px solid var(--color-warm);
+    border-left: 0;
+  }
+
+  .logo {
+    height: 26px;
+  }
+
+  .introBody {
+    margin-top: 0;
+  }
+
+  .brandTitle {
+    max-width: 16ch;
+    font-size: 34px;
+  }
+
+  .introText {
+    margin-top: var(--space-3);
+    font-size: 15px;
+  }
+
+  .facts {
+    margin-top: var(--space-5);
+    padding-top: var(--space-4);
+  }
+
+  .facts div {
+    grid-template-columns: 86px 1fr;
+  }
+
+  .introFooter {
+    margin-top: 0;
+    padding-top: var(--space-4);
+  }
+
+  .formSide {
+    align-items: flex-start;
+    padding: var(--space-6) var(--space-4) var(--space-7);
+  }
+
+  .formInner {
+    max-width: 480px;
+  }
+
+  .title {
+    font-size: 32px;
+  }
+}

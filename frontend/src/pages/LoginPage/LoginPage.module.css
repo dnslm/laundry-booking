@@ -1,0 +1,73 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+  margin-top: var(--space-5);
+}
+
+.checkbox {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  color: var(--color-muted);
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.checkbox input {
+  width: 16px;
+  height: 16px;
+  margin: 0;
+  accent-color: var(--color-accent);
+}
+
+.submit {
+  width: 100%;
+  margin-top: var(--space-1);
+}
+
+.switch {
+  color: var(--color-muted);
+}
+
+.demo {
+  font-size: 13px;
+}
+
+.demoSummary {
+  color: var(--color-on-dark);
+  font-weight: 600;
+  cursor: pointer;
+  list-style: none;
+}
+
+.demoSummary::-webkit-details-marker {
+  display: none;
+}
+
+.demoSummary::before {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  margin-right: var(--space-2);
+  background: var(--color-warm);
+  content: '';
+}
+
+.demoText {
+  margin-top: var(--space-2);
+}
+
+.demoList {
+  margin: var(--space-2) 0 0;
+  padding-left: 18px;
+  color: var(--color-on-dark-muted);
+}
+
+.demoList strong {
+  color: var(--color-on-dark);
+}
+
+.demoList li + li {
+  margin-top: var(--space-1);
+}
